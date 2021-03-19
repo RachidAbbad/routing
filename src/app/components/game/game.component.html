@@ -1,0 +1,22 @@
+<section class="d-flex flex-column align-items-center 
+justify-content-around" style="height: 50vh;">
+    <h1>Game setup</h1>
+<div>
+    <label>Difficulty</label>
+    <select #dif>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+    </select>
+</div>
+<a (click)="onClick(dif.value)" class="btn btn-primary"> 
+Start
+</a>
+</section>

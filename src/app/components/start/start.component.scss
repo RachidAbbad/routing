@@ -1,9 +1,24 @@
-table{
-    width: 100%;
-
+table {
+  width: 100%;
 }
 
-td{
-    text-align: center;
-    padding-top: 30px;
+td {
+  text-align: center;
+  padding-top: 30px;
+}
+div {
+  text-align: center;
+}
+.textDecoration {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 15px;
+}
+.msg {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+  margin: 15px;
+  font-size: 25;
+  color: red;
 }

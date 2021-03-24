@@ -1,7 +1,16 @@
-button{
-    width: 150px;
-    height: 150px;
+button {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  border: 2px black solid;
 }
-button:active{
-    background-color: blue;
+button:active {
+  background-color: rgb(129, 199, 132);
+}
+.normal {
+  background-color: rgb(156, 39, 176);
+}
+
+.click {
+  background-color: rgb(76, 175, 80);
 }

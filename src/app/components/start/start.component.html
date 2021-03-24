@@ -1,23 +1,22 @@
-<div>
-    difficulty:
-{{difficulty}}
-</div>
-<div>score : {{score}}</div>
+<div class = "textDecoration">
+    difficulty:  {{difficulty}}
+</div >
+<div class = "textDecoration">score :  {{score}}</div>
 <div>
     <table>
         <tr>
             <td>
-                <app-button (clicked)="onChildEmit($event)" [statut]="nbrBtnCurrent==1" [id]="b1"></app-button>
+                <app-button (clicked)="onChildEmit($event)" [statut]="nbrBtnCurrent==1"></app-button>
             </td>
             <td>
-                <app-button (clicked)="onChildEmit($event)"  [statut]="nbrBtnCurrent==2"  [id]="b2"></app-button>
+                <app-button (clicked)="onChildEmit($event)"  [statut]="nbrBtnCurrent==2"></app-button>
             </td>
         </tr>
         <tr>
             <td>
-                <app-button (clicked)="onChildEmit($event)"  [statut]="nbrBtnCurrent==3" [id]="b3"></app-button>
+                <app-button (clicked)="onChildEmit($event)"  [statut]="nbrBtnCurrent==3"></app-button>
             </td>
-            <td>   <app-button (clicked)="onChildEmit($event)"  [statut]="nbrBtnCurrent==4"  [id]="b4"></app-button></td>
+            <td>   <app-button (clicked)="onChildEmit($event)"  [statut]="nbrBtnCurrent==4"></app-button></td>
         </tr>
     </table>
     

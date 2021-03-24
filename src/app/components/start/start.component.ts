@@ -8,9 +8,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class StartComponent implements OnInit {
 
-  private difficulty:number;
-  private score:number;
-  private nbrBtnCurrent:number;
+  public difficulty:number;
+  public score:number;
+  public nbrBtnCurrent:number;
   private timer;
   private ongoing;
   constructor(private activatedRoute:ActivatedRoute) { }
@@ -29,6 +29,7 @@ public onChildEmit(statut){
   {
     this.score++;
     this.ongoing=true;
+    this.nbrBtnCurrent=9;
   }
   else{
     this.gameOvER();
@@ -47,8 +48,6 @@ private gameOvER():void{
       this.gameOvER();
       this.nbrBtnCurrent=Math.floor(Math.random()*4)+1;
       this.ongoing=false;
-    
-
     },2000/this.difficulty);
   }
 }
